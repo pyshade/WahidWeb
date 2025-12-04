@@ -21,10 +21,10 @@ export default function HeroSection() {
       </div>
 
       {/* Animated Straps */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         {/* Top Right Diagonal Strap - White */}
         <div
-          className="absolute w-[200%] h-24 md:h-32 bg-gleamy-off-white -right-[30%] top-[15%]"
+          className="absolute w-[200%] h-20 md:h-32 bg-gleamy-off-white right-[-40%] md:right-[-60%] top-[8%] md:top-[-5%]"
           style={{
             transform: "rotate(44.7deg)",
             transformOrigin: "center",
@@ -65,7 +65,7 @@ export default function HeroSection() {
 
         {/* Bottom Diagonal Strap - Black */}
         <div
-          className="absolute w-[200%] h-24 md:h-32 bg-gleamy-dark border-y-[10px] border-gleamy-dark -left-1/4 top-[75%]"
+          className="absolute w-[200%] h-20 md:h-32 bg-gleamy-dark border-y-[6px] md:border-y-[10px] border-gleamy-dark -left-1/4 top-[78%] md:top-[85%]"
           style={{
             transform: "rotate(-12.95deg)",
             transformOrigin: "center",
