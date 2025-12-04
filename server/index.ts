@@ -1,7 +1,11 @@
-import "dotenv/config";
+import path from "path";
+import dotenv from "dotenv";
+
+dotenv.config({ path: path.resolve(process.cwd(), ".env") });
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
+import { handleContact } from "./routes/contact";
 
 export function createServer() {
   const app = express();
@@ -18,6 +22,7 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+  app.post("/api/contact", handleContact);
 
   return app;
 }

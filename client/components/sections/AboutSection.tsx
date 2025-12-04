@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function AboutSection() {
   return (
     <section
@@ -64,8 +66,8 @@ export default function AboutSection() {
             </p>
 
             <div className="pt-8">
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-3 text-xl md:text-2xl font-sans capitalize tracking-wide hover:text-gleamy-orange transition-colors group"
               >
                 <span>Contact us</span>
@@ -81,7 +83,7 @@ export default function AboutSection() {
                     fill="#FF7E21"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

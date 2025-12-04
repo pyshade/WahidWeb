@@ -71,12 +71,21 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#portfolio"
+                  href="/#portfolio"
                   onClick={() => setIsMenuOpen(false)}
                   className="text-2xl hover:text-gleamy-orange transition-colors"
                 >
                   Portfolio
                 </a>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-2xl hover:text-gleamy-orange transition-colors"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
 
